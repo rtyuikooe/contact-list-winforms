@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.btnluu = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // txtphone
@@ -58,11 +61,26 @@
             this.btnluu.Text = "Lưu";
             this.btnluu.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(371, 186);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "Email";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnluu);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtphone);
@@ -77,5 +95,7 @@
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Button btnluu;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
